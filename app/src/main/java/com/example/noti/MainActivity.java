@@ -5,6 +5,8 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.NotificationManagerCompat;
@@ -27,24 +29,24 @@ public class MainActivity extends AppCompatActivity {
 
         btn1 = findViewById(R.id.btn1);
 
-
-
         // 다음 스니펫은 사용자가 알림을 탭하면 활동을 여는 기본 인텐트를 만드는 방법을 보여줍니다.
         Intent intent = new Intent(this, Two.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0); //PendingIntent->앱이 꺼져 있오도 원격으로 킬 수가 있는 거
 
+        // Bitmap으로 바꾼 후 저장
+        Bitmap bitimg = BitmapFactory.decodeResource(getResources(),R.drawable.internet);
 
         // 알림의 콘텐츠와 채널 설정
         builder = new NotificationCompat.Builder(this, "Channel_Id")
                 .setSmallIcon(R.drawable.receiveimg)  // 작은 아이콘
                 .setContentTitle("제목!!")  // 제목
                 .setContentText("본문!! 입니다~~~")  // 본문 텍스트
+                .setStyle(new NotificationCompat.BigPictureStyle().bigPicture(bitimg)) //이미지 추가!!
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)  // 알림 우선순위
                 //밑에는 intent 사용해서 작성한거
                 .setContentIntent(pendingIntent) // 사용자가 탭하면 자동으로 알림을 삭제
                 .setAutoCancel(true);
-
 
         // 알림 진짜 띄우게 하는거 (알림 표시)
 //        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
@@ -75,5 +77,4 @@ public class MainActivity extends AppCompatActivity {
             notificationManager.createNotificationChannel(channel);
         }
     }
-
 }
