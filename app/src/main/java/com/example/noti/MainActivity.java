@@ -1,10 +1,12 @@
 package com.example.noti;
 
 
+import android.Manifest;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Build;
@@ -14,6 +16,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import static android.app.Notification.EXTRA_NOTIFICATION_ID;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,6 +41,24 @@ public class MainActivity extends AppCompatActivity {
         // Bitmap으로 바꾼 후 저장
         Bitmap bitimg = BitmapFactory.decodeResource(getResources(),R.drawable.internet);
 
+
+
+        // 브로드캐스트 전송 (이거 사용한적 없음)
+//        Intent brodcastsend_intent = new Intent();
+//        brodcastsend_intent.setAction("com.example.broadcast.MY_NOTIFICATION");
+//        brodcastsend_intent.putExtra("data","Notice me senpai!");
+//        sendBroadcast(brodcastsend_intent);
+
+        //////////////4번째 커밋(시작)//////////////////////////////////////////
+        //작업 버튼 추가 ( + 브로드캐스트 )
+        Intent snoozeIntent = new Intent(this, MyBroadcastReceiver.class);
+        snoozeIntent.setAction("snooze");
+        snoozeIntent.putExtra(EXTRA_NOTIFICATION_ID, 0);
+        PendingIntent snoozePendingIntent =
+                PendingIntent.getBroadcast(this, 0, snoozeIntent, 0);
+        //////////////4번째 커밋(끝)/////////////////////////////////////////////////
+
+
         // 알림의 콘텐츠와 채널 설정
         builder = new NotificationCompat.Builder(this, "Channel_Id")
                 .setSmallIcon(R.drawable.receiveimg)  // 작은 아이콘
@@ -46,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)  // 알림 우선순위
                 //밑에는 intent 사용해서 작성한거
                 .setContentIntent(pendingIntent) // 사용자가 탭하면 자동으로 알림을 삭제
+                .addAction(R.drawable.heart,"스누즈",snoozePendingIntent) // (4번째 커밋 영역)
                 .setAutoCancel(true);
 
         // 알림 진짜 띄우게 하는거 (알림 표시)
@@ -60,6 +83,10 @@ public class MainActivity extends AppCompatActivity {
                 notificationManager.notify(0, builder.build()); // 0 줌
             }
         });
+
+
+
+
 
     }
 
