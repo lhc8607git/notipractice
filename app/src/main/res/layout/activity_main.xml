@@ -5,8 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".notification1.MainActivity">
 
+    <TextView
+        android:textSize="15dp"
+        android:text="1.노티피케이션 연습"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
     <Button
         android:text="노티클릭"
         android:id="@+id/btn1"

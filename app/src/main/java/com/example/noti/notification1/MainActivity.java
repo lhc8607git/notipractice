@@ -1,12 +1,10 @@
-package com.example.noti;
+package com.example.noti.notification1;
 
 
-import android.Manifest;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Build;
@@ -16,6 +14,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.noti.R;
 
 import static android.app.Notification.EXTRA_NOTIFICATION_ID;
 
@@ -29,6 +29,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // 1.노티피케이션 연습
+        notipractice();
+
+
+
+    }
+
+    private void notipractice(){
         createNotificationChannel();
 
         btn1 = findViewById(R.id.btn1);
@@ -83,11 +91,6 @@ public class MainActivity extends AppCompatActivity {
                 notificationManager.notify(0, builder.build()); // 0 줌
             }
         });
-
-
-
-
-
     }
 
     // 채널 만들기
@@ -104,4 +107,5 @@ public class MainActivity extends AppCompatActivity {
             notificationManager.createNotificationChannel(channel);
         }
     }
+
 }

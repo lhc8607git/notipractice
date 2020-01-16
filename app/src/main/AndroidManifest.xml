@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.SEND_SMS"/>  <!-- 1.브로드캐스트 수신할려면(수신앱에서 해야하는거), 2.수신자에 브로드캐스트를 전송할 수 있다.-->
 
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".notification1.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,7 +20,8 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".MyBroadcastReceiver"  android:exported="true"
+        <!-- 1.노티피케이션 연습 -->
+        <receiver android:name=".notification1.MyBroadcastReceiver"  android:exported="true"
             android:permission="android.permission.SEND_SMS">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
@@ -27,7 +29,9 @@
                 <action android:name="android.intent.action.AIRPLANE_MODE"/> <!-- 브로드캐스트("수신 앱"해당)-->
             </intent-filter>
         </receiver>
+        <activity android:name=".notification1.Two"/>
 
-        <activity android:name=".Two"/>
+
+
     </application>
 </manifest>

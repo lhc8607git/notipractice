@@ -1,4 +1,4 @@
-package com.example.noti;
+package com.example.noti.notification1;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
