@@ -6,7 +6,7 @@
 
 - 노티피케이션 연습 <br>
 사용 코드 : MainActivity.java, MyBroadcastReceiver.java, Two.java <br>
-참조 : https://hijjang2.tistory.com/112
+참조 : https://hijjang2.tistory.com/112 <br>
 1.주석코드로 실행 시,(바로 노티 발생) <br>
 2.현코드로 실핼 시,(버튼 클릭 후 -> 노티 발생 -> 노티 클릭 시 -> 해당 화면 뷰 이동) <br>
 3.노티에 이미지 추가 <br>
