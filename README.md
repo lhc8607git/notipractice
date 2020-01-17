@@ -20,4 +20,16 @@
 사용 코드 : SmsReceiver.java, SmsActivity.java<br>
 참조 : https://hijjang2.tistory.com/225<br>
 6.브로드캐스트 수신자(=브로드캐스트 리시버) 연습 <br>
+<br>
+
+
+- 위험 권한 부여 연습 <br>
+(나중에 위험 권한 이거 복붙해서 사용하면 됨) <br>
+패키지 : 메인만 사용함 <br>
+사용 코드 : MainActivity.java<br>
+참조 : https://hijjang2.tistory.com/249<br>
+7.위험 권한 부여 연습 <br>
+<br>
+
+
 
