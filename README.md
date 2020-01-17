@@ -15,7 +15,7 @@
 <br>
 
 - 브로드캐스트 수신자(=브로드캐스트 리시버) 연습 <br>
-패키지 : <br>
-사용 코드 : <br>
-참조 : <br>
+패키지 : broadcasting2<br>
+사용 코드 : SmsReceiver.java, SmsActivity.java<br>
+참조 : https://hijjang2.tistory.com/225<br>
 
