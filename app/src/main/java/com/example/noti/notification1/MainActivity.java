@@ -1,19 +1,24 @@
 package com.example.noti.notification1;
 
 
+import android.Manifest;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Build;
+import android.support.annotation.NonNull;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.NotificationManagerCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.noti.R;
 
@@ -36,9 +41,46 @@ public class MainActivity extends AppCompatActivity {
         // 2.브로드캐스트 수신자(=브로드캐스트 리시버) 연습
 
 
+        // 3.위험 권한 부여 연습
+//        dangerous_permission();
+
 
     }
 
+
+
+
+    // 3.위험 권한 부여 연습
+    private void dangerous_permission(){
+
+        // 권한이 이미 부여된 경우가 있을 수가 있어요.. (권한 확인하는 코드)
+        int permissionCheck = ContextCompat.checkSelfPermission(this, Manifest.permission.RECEIVE_SMS);
+        if(permissionCheck == PackageManager.PERMISSION_GRANTED) {
+            Toast.makeText(this,"SMS 수신 권한 주어져 있음",Toast.LENGTH_LONG).show();
+        } else{
+            //else if(permissionCheck == PackageManager.PERMISSION_DENIED){
+            Toast.makeText(this,"SMS 수신 권한 없음.",Toast.LENGTH_LONG).show();
+        }
+
+    }
+    // 여기서 권한이 부여가 됬는지, 안됬는지 확인을 여기서 할 수가 있다.
+//    @Override
+//    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+//        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+//        switch (requestCode){
+//            case 22:
+//                if(grantResults.length > 0){
+//
+//                    if(grantResults[0] == PackageManager.PERMISSION_GRANTED){   //PERMISSION_GRANTED 사용자가 수락을 할 경우
+//                        Toast.makeText(this,"SMS 수신 권한을 사용자가 승인함.",Toast.LENGTH_LONG).show();
+//                    }else if(grantResults[0] == PackageManager.PERMISSION_DENIED){  // 사용자가 거부할 경우
+//                        Toast.makeText(this,"SMS 수신 권한을 사용자가 거부함.",Toast.LENGTH_LONG).show();
+//                    }
+//                }else {
+//                    Toast.makeText(this,"SMS 수신 권한을 부여받지 못함.",Toast.LENGTH_LONG).show();
+//                }
+//        }
+//    }
 
 
 
@@ -52,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
         // app                   <- 버전 22 변경
         // SmsActivity.java      <- 브로드캐스트 수신자에서 sms를 받아서(intent로 받음) 화면으로 보여주는 기능
         // activity_sms.xml      <- 보여줄 화면
+
 
 
 
