@@ -18,4 +18,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+    <TextView
+        android:textSize="15dp"
+        android:text="2.브로드캐스트 수신자(=브로드캐스트 리시버) 연습"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="15dp"
+        android:text="(클릭 없음, 문자만 받으면 됨)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="문자 받으면 받은 결과 뜸"
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>

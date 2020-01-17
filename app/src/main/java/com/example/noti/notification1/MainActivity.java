@@ -30,12 +30,33 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // 1.노티피케이션 연습
-        notipractice();
+//        notipractice();
+
+
+        // 2.브로드캐스트 수신자(=브로드캐스트 리시버) 연습
 
 
 
     }
 
+
+
+
+
+
+
+    // 2.브로드캐스트 수신자(=브로드캐스트 리시버) 연습
+        // activity_sms.xml
+        // SmsReceiver.java      <- 브로드캐스트 수신자, 리시버
+        // AndroidManifest.xml   <- receiver태그, intent-filter태그, action태그 추가
+        // app                   <- 버전 22 변경
+        // SmsActivity.java      <- 브로드캐스트 수신자에서 sms를 받아서(intent로 받음) 화면으로 보여주는 기능
+        // activity_sms.xml      <- 보여줄 화면
+
+
+
+
+    // 1.노티피케이션 연습
     private void notipractice(){
         createNotificationChannel();
 
