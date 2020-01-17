@@ -29,6 +29,7 @@
 사용 코드 : MainActivity.java<br>
 참조 : https://hijjang2.tistory.com/249<br>
 7.위험 권한 부여 연습 <br>
+(노티, 브로드캐스트 연결되는 거 없음, 그냥 딱, 위험 권한 부여만 연습했음) <br>
 <br>
 
 
