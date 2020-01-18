@@ -37,7 +37,7 @@
 사용 코드 : MainActivity.java, CommentWriteActivity.java, border.xml(에디터 테마)<br>
 참조1 : https://hijjang2.tistory.com/243<br>
 참조2 : https://hijjang2.tistory.com/251<br>
-<br>
+8.별점( 연습 <br>
 <br>
 
 
