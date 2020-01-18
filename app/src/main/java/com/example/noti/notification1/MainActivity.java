@@ -11,6 +11,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.NotificationManagerCompat;
 import android.support.v4.content.ContextCompat;
@@ -18,9 +19,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RatingBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.noti.R;
+
+import ratingbar4.CommentWriteActivity;
 
 import static android.app.Notification.EXTRA_NOTIFICATION_ID;
 
@@ -28,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btn1;
     private NotificationCompat.Builder builder;
+
+    private RatingBar ratingBar;
+    private TextView outputView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +53,60 @@ public class MainActivity extends AppCompatActivity {
 //        dangerous_permission();
 
 
+        // 4.별점(RatingBar) 연습
+        ratingpractice();
+
     }
+
+
+
+
+
+    // 4.별점(RatingBar) 연습
+    private void ratingpractice(){
+        ratingBar = (RatingBar)findViewById(R.id.ratingBar);
+        outputView = (TextView) findViewById(R.id.outputView);
+
+
+        Button btn4 = (Button)findViewById(R.id.btn4);
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //다른 화면 띄우도록 하나 만듬
+                showCommentWriteActivity();
+            }
+        });
+    }
+
+    public void showCommentWriteActivity(){
+        float rating = ratingBar.getRating();
+
+        Intent intent = new Intent(getApplicationContext(), CommentWriteActivity.class);
+        intent.putExtra("rating",rating);
+        startActivityForResult(intent,101);
+
+    }
+
+    // CommentWriteActivity.java에서 응답을 받을 경우
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent intent) {
+        super.onActivityResult(requestCode, resultCode, intent);
+
+        if(requestCode == 101){  // 101로 받으면
+            if(intent != null){
+                String contents = intent.getStringExtra("contents");
+                float ratingbarupdate = intent.getFloatExtra("ratingbarupdate",0.0f);
+                outputView.setText(contents);
+                ratingBar.setRating(ratingbarupdate);
+            }
+        }
+    }
+
+
+
+
+
+
 
 
 

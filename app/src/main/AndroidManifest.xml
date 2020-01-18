@@ -3,7 +3,6 @@
     package="com.example.noti">
 
     <uses-permission android:name="android.permission.SEND_SMS" /> <!-- 1.브로드캐스트 수신할려면(수신앱에서 해야하는거), 2.수신자에 브로드캐스트를 전송할 수 있다. -->
-
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
 
     <application
@@ -20,9 +19,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- 1.노티피케이션 연습 -->
+        </activity> <!-- 1.노티피케이션 연습 -->
         <receiver
             android:name=".notification1.MyBroadcastReceiver"
             android:exported="true"
@@ -33,11 +30,8 @@
                 <action android:name="android.intent.action.AIRPLANE_MODE" /> <!-- 브로드캐스트("수신 앱"해당) -->
             </intent-filter>
         </receiver>
-        <activity android:name=".notification1.Two" />
 
-
-
-        <!-- 2.브로드캐스트 수신자(=브로드캐스트 리시버) 연습 -->
+        <activity android:name=".notification1.Two" /> <!-- 2.브로드캐스트 수신자(=브로드캐스트 리시버) 연습 -->
         <receiver
             android:name="broadcasting2.SmsReceiver"
             android:enabled="true"
@@ -46,10 +40,10 @@
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
         </receiver>
+
         <activity android:name="broadcasting2.SmsActivity" />
-
-
-
+        
+        <activity android:name="ratingbar4.CommentWriteActivity"></activity>
     </application>
 
 </manifest>
