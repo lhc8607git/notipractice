@@ -32,5 +32,13 @@
 (노티, 브로드캐스트 연결되는 거 없음, 그냥 딱, 위험 권한 부여만 연습했음) <br>
 <br>
 
+- 별점(RatingBar) -> (한줄평 작성하기) 연습 <br>
+패키지 : ratingbar4<br>
+사용 코드 : MainActivity.java, CommentWriteActivity.java, border.xml(에디터 테마)<br>
+참조1 : https://hijjang2.tistory.com/243<br>
+참조2 : https://hijjang2.tistory.com/251<br>
+<br>
+<br>
+
 
 
