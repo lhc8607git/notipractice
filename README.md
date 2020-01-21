@@ -45,6 +45,6 @@
 사용 코드(화면) : mainview.xml, fragment_main.xml, fragment_menu.xml<br>
 사용 코드(처리) : MainFragment.java, MainFActivity.java, MenuFragment.java<br>
 참조 : https://hijjang2.tistory.com/254<br>
-9.프래그먼트 연습 <br>
+9.프래그먼트(프래그먼트 안에 있는 버튼 클릭시, 다른 프래그먼트 띄우는 방법) 연습 <br>
 <br>
 
