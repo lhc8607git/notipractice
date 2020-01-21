@@ -44,6 +44,8 @@
         <activity android:name="broadcasting2.SmsActivity" />
         
         <activity android:name="ratingbar4.CommentWriteActivity"></activity>
+
+        <activity android:name="fragment5.MainFActivity"/>
     </application>
 
 </manifest>

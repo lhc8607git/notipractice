@@ -25,13 +25,14 @@ import android.widget.Toast;
 
 import com.example.noti.R;
 
+import fragment5.MainFActivity;
 import ratingbar4.CommentWriteActivity;
 
 import static android.app.Notification.EXTRA_NOTIFICATION_ID;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn1;
+    private Button btn1,btn5;
     private NotificationCompat.Builder builder;
 
     private RatingBar ratingBar;
@@ -54,9 +55,38 @@ public class MainActivity extends AppCompatActivity {
 
 
         // 4.별점(RatingBar) 연습
-        ratingpractice();
+//        ratingpractice();
+
+
+        // 5.프래그먼트(프래그먼트 안에 있는 버튼 클릭시, 다른 프래그먼트 띄우는 방법) 연습
+        btn5 = findViewById(R.id.btn5);
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                moveView();
+            }
+        });
+
+
+
 
     }
+
+
+
+
+
+
+    // 5.프래그먼트(프래그먼트 안에 있는 버튼 클릭시, 다른 프래그먼트 띄우는 방법) 연습
+    private void moveView(){
+        Intent in = new Intent(getApplicationContext(), MainFActivity.class);
+        startActivity(in);
+    }
+
+
+
+
+
 
 
 

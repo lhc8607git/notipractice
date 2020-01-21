@@ -6,67 +6,95 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".notification1.MainActivity">
-
-    <TextView
-        android:textSize="15dp"
-        android:text="1.노티피케이션 연습"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <Button
-        android:text="노티클릭"
-        android:id="@+id/btn1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:textSize="15dp"
-        android:text="2.브로드캐스트 수신자(=브로드캐스트 리시버) 연습"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:textSize="15dp"
-        android:text="(클릭 없음, 문자만 받으면 됨)"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <Button
-        android:text="문자 받으면 받은 결과 뜸"
-        android:id="@+id/btn2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:textSize="15dp"
-        android:text="3.위험 권한 부여 연습"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:textSize="15dp"
-        android:text="(앱 처음 실행 시,위험권한 뜸, 버전 23이상으로 하면)"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:textSize="15dp"
-        android:text="4.별점(RatingBar) 연습"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <RatingBar
-        android:id="@+id/ratingBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:numStars="5"
-        android:rating="4.1"
-        android:stepSize="0.1"
-        style="?android:attr/ratingBarStyleSmall"/>
-    <Button
-        android:id="@+id/btn4"
-        android:text="작성하기"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:id="@+id/outputView"
-        android:text="전달받은 문자열 : "
+    <ScrollView
+        android:id="@+id/sd"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent">
 
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="15dp"
+                android:text="1.노티피케이션 연습"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="노티클릭"
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="15dp"
+                android:text="2.브로드캐스트 수신자(=브로드캐스트 리시버) 연습"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="15dp"
+                android:text="(클릭 없음, 문자만 받으면 됨)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="문자 받으면 받은 결과 뜸"
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="15dp"
+                android:text="3.위험 권한 부여 연습"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="15dp"
+                android:text="(앱 처음 실행 시,위험권한 뜸, 버전 23이상으로 하면)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="15dp"
+                android:text="4.별점(RatingBar) 연습"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="4.1"
+                android:stepSize="0.1"
+                style="?android:attr/ratingBarStyleSmall"/>
+            <Button
+                android:id="@+id/btn4"
+                android:text="작성하기"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/outputView"
+                android:text="전달받은 문자열 : "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textSize="15dp"
+                android:text="5.프래그먼트(프래그먼트 안에 있는 버튼 클릭시, 다른 프래그먼트 띄우는 방법) 연습"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="click"
+                android:id="@+id/btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
 </LinearLayout>
