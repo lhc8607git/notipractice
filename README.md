@@ -45,6 +45,15 @@
 사용 코드(화면) : mainview.xml, fragment_main.xml, fragment_menu.xml<br>
 사용 코드(처리) : MainFragment.java, MainFActivity.java, MenuFragment.java<br>
 참조 : https://hijjang2.tistory.com/254<br>
-9.프래그먼트 연습 <br>
+9.프래그먼트(프래그먼트 안에 있는 버튼 클릭시, 다른 프래그먼트 띄우는 방법) 연습 <br>
+<br>
+
+- 뷰페이저 연습 <br>
+(옆으로 스크롤하면 됨) <br>
+패키지 : viewpager6<br>
+사용 코드(화면) : activity6_main.xml, frag6_1.xml, frag6_2.xml, frag6_3.xml <br>
+사용 코드(처리) : Activity6.java, Fragment6_1.java, Fragment6_2.java, Fragment6_3.java<br>
+참조 : https://hijjang2.tistory.com/270<br>
+10.뷰페이저 연습 <br>
 <br>
 
