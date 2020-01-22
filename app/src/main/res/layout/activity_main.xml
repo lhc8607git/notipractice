@@ -92,6 +92,18 @@
                 android:layout_height="wrap_content" />
 
 
+            <TextView
+                android:textSize="15dp"
+                android:text="6.뷰페이저 연습"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="click"
+                android:id="@+id/btn6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
         </LinearLayout>
 
 

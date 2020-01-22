@@ -46,6 +46,9 @@
         <activity android:name="ratingbar4.CommentWriteActivity"></activity>
 
         <activity android:name="fragment5.MainFActivity"/>
+
+        <activity android:name="viewpager6.Activity6"/>
+
     </application>
 
 </manifest>

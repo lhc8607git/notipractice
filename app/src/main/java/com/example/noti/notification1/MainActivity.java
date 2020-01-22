@@ -27,12 +27,13 @@ import com.example.noti.R;
 
 import fragment5.MainFActivity;
 import ratingbar4.CommentWriteActivity;
+import viewpager6.Activity6;
 
 import static android.app.Notification.EXTRA_NOTIFICATION_ID;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn1,btn5;
+    private Button btn1,btn5,btn6;
     private NotificationCompat.Builder builder;
 
     private RatingBar ratingBar;
@@ -63,9 +64,22 @@ public class MainActivity extends AppCompatActivity {
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                moveView();
+                moveViewbtn5();
             }
         });
+
+
+        // 6.뷰페이저 연습
+        btn6= findViewById(R.id.btn6);
+        btn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                moveViewbtn6();
+            }
+        });
+
+
+
 
 
 
@@ -77,8 +91,21 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+    // 6.프래그먼트(프래그먼트 안에 있는 버튼 클릭시, 다른 프래그먼트 띄우는 방법) 연습
+    private void moveViewbtn6(){
+        Intent in = new Intent(getApplicationContext(), Activity6.class);
+        startActivity(in);
+    }
+
+
+
+
+
+
+
     // 5.프래그먼트(프래그먼트 안에 있는 버튼 클릭시, 다른 프래그먼트 띄우는 방법) 연습
-    private void moveView(){
+    private void moveViewbtn5(){
         Intent in = new Intent(getApplicationContext(), MainFActivity.class);
         startActivity(in);
     }
