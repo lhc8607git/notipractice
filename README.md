@@ -50,9 +50,9 @@
 
 - 뷰페이저 연습 <br>
 패키지 : viewpager6<br>
-사용 코드(화면) : activity6_main.xml <br>
-사용 코드(처리) : Activity6.java <br>
-참조 : <br>
+사용 코드(화면) : activity6_main.xml, frag6_1.xml, frag6_2.xml, frag6_3.xml <br>
+사용 코드(처리) : Activity6.java, Fragment6_1.java, Fragment6_2.java, Fragment6_3.java<br>
+참조 : https://hijjang2.tistory.com/270<br>
 10.뷰페이저 연습 <br>
 <br>
 
