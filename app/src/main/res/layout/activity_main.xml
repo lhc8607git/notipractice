@@ -104,6 +104,18 @@
                 android:layout_height="wrap_content" />
 
 
+            <TextView
+                android:textSize="15dp"
+                android:text="7.네비게이션드로어 연습"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="click"
+                android:id="@+id/btn7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
         </LinearLayout>
 
 

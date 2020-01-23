@@ -42,12 +42,14 @@
         </receiver>
 
         <activity android:name="broadcasting2.SmsActivity" />
-        
-        <activity android:name="ratingbar4.CommentWriteActivity"></activity>
+        <activity android:name="ratingbar4.CommentWriteActivity" />
+        <activity android:name="fragment5.MainFActivity" />
+        <activity android:name="viewpager6.Activity6" />
+        <activity
+            android:name="nevigationdrawer7.Activity7"
+            android:label="@string/title_activity_7"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
 
-        <activity android:name="fragment5.MainFActivity"/>
-
-        <activity android:name="viewpager6.Activity6"/>
 
     </application>
 

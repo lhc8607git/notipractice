@@ -26,6 +26,7 @@ import android.widget.Toast;
 import com.example.noti.R;
 
 import fragment5.MainFActivity;
+import nevigationdrawer7.Activity7;
 import ratingbar4.CommentWriteActivity;
 import viewpager6.Activity6;
 
@@ -33,7 +34,7 @@ import static android.app.Notification.EXTRA_NOTIFICATION_ID;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn1,btn5,btn6;
+    private Button btn1,btn5,btn6,btn7;
     private NotificationCompat.Builder builder;
 
     private RatingBar ratingBar;
@@ -79,11 +80,26 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        // 7.네비게이션드로어 연습
+        btn7= findViewById(R.id.btn7);
+        btn7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                moveViewbtn7();
+            }
+        });
 
 
 
 
 
+
+    }
+
+    // 7.네비게이션드로어 연습
+    private void moveViewbtn7(){
+        Intent in = new Intent(getApplicationContext(), Activity7.class);
+        startActivity(in);
     }
 
 
