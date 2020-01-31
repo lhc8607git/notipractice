@@ -63,9 +63,9 @@
 11.네비게이션드로어 연습 <br>
 <br>
 
-- 사진찍기 연습 <br>
+- 사진찍기(간단한거) 연습 <br>
 패키지 : captureIntent8<br>
-참조 : <br>
-12.사진찍기 연습 <br>
+참조 : https://hijjang2.tistory.com/306<br>
+12.사진찍기(간단한거) 연습 <br>
 <br>
 
