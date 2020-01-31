@@ -128,6 +128,18 @@
                 android:layout_height="wrap_content" />
 
 
+            <TextView
+                android:textSize="15dp"
+                android:text="9.사진찍기(커스텀) 연습"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="click"
+                android:id="@+id/btn9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
         </LinearLayout>
 
 

@@ -25,6 +25,7 @@ import android.widget.Toast;
 
 import com.example.noti.R;
 
+import capture9.Activity9;
 import captureIntent8.Activity8;
 import fragment5.MainFActivity;
 import nevigationdrawer7.Activity7;
@@ -35,7 +36,7 @@ import static android.app.Notification.EXTRA_NOTIFICATION_ID;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn1,btn5,btn6,btn7,btn8;
+    private Button btn1,btn5,btn6,btn7,btn8, btn9;
     private NotificationCompat.Builder builder;
 
     private RatingBar ratingBar;
@@ -101,6 +102,16 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        // 9.사진찍기(커스텀) 연습
+        btn9 = findViewById(R.id.btn9);
+        btn9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                moveViewbtn9();
+            }
+        });
+
+
 
 
 
@@ -108,12 +119,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    // 8.네비게이션드로어 연습
+
+
+
+    // 9.사진찍기(커스텀) 연습
+    private void moveViewbtn9(){
+        Intent in = new Intent(getApplicationContext(), Activity9.class);
+        startActivity(in);
+    }
+
+
+
+
+
+
+
+
+    // 8.사진찍기(간단한거) 연습
     private void moveViewbtn8(){
         Intent in = new Intent(getApplicationContext(), Activity8.class);
         startActivity(in);
     }
-
 
 
 

@@ -56,6 +56,8 @@
 
         <activity android:name="captureIntent8.Activity8"/>
 
+        <activity android:name="capture9.Activity9"/>
+
     </application>
 
 </manifest>
