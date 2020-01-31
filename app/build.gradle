@@ -5,8 +5,8 @@ android {
     buildToolsVersion "29.0.1"
     defaultConfig {
         applicationId "com.example.noti"
-        minSdkVersion 26   //22
-        targetSdkVersion 28   //22
+        minSdkVersion 15   //22  //26
+        targetSdkVersion 22   //22 //28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
