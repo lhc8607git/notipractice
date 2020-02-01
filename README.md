@@ -76,3 +76,10 @@
 13.사진찍기(커스텀) 연습 <br>
 <br>
 
+
+- 음악 재생하기 <br>
+패키지 : captur9<br>
+참조 : https://hijjang2.tistory.com/309<br>
+14.음악 재생하기 <br>
+<br>
+
