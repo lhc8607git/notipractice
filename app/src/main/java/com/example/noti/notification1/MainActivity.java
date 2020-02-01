@@ -28,6 +28,7 @@ import com.example.noti.R;
 import capture9.Activity9;
 import captureIntent8.Activity8;
 import fragment5.MainFActivity;
+import mediaplayer10.Activity10;
 import nevigationdrawer7.Activity7;
 import ratingbar4.CommentWriteActivity;
 import viewpager6.Activity6;
@@ -36,7 +37,7 @@ import static android.app.Notification.EXTRA_NOTIFICATION_ID;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn1,btn5,btn6,btn7,btn8, btn9;
+    private Button btn1,btn5,btn6,btn7,btn8, btn9, btn10;
     private NotificationCompat.Builder builder;
 
     private RatingBar ratingBar;
@@ -112,11 +113,26 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
+        // 10.음악 재생하기
+        btn10 = findViewById(R.id.btn10);
+        btn10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                moveViewbtn10();
+            }
+        });
 
 
 
     }
+
+
+    // 10.음악 재생하기
+    private void moveViewbtn10(){
+        Intent in = new Intent(getApplicationContext(), Activity10.class);
+        startActivity(in);
+    }
+
 
 
 
