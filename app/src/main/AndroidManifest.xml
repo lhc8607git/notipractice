@@ -62,6 +62,8 @@
 
         <activity android:name="mediaplayer10.Activity10"/>
 
+        <activity android:name="videoplayer11.Activity11"/>
+
     </application>
 
 </manifest>
