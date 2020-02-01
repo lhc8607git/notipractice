@@ -78,8 +78,15 @@
 
 
 - 음악 재생하기 <br>
-패키지 : captur9<br>
+패키지 : mediaplayer10<br>
 참조 : https://hijjang2.tistory.com/309<br>
 14.음악 재생하기 <br>
+<br>
+
+
+- 동영상 재생하기 <br>
+패키지 : videoplayer11<br>
+참조 : https://hijjang2.tistory.com/310<br>
+15.동영상 재생하기 <br>
 <br>
 
