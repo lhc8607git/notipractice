@@ -10,7 +10,6 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Build;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.NotificationManagerCompat;
@@ -25,6 +24,7 @@ import android.widget.Toast;
 
 import com.example.noti.R;
 
+import audiorecorder12.Activity12;
 import capture9.Activity9;
 import captureIntent8.Activity8;
 import fragment5.MainFActivity;
@@ -38,7 +38,7 @@ import static android.app.Notification.EXTRA_NOTIFICATION_ID;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn1,btn5,btn6,btn7,btn8, btn9, btn10, btn11;
+    private Button btn1,btn5,btn6,btn7,btn8, btn9, btn10, btn11, btn12;
     private NotificationCompat.Builder builder;
 
     private RatingBar ratingBar;
@@ -133,8 +133,33 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        // 12.음성 녹음하기
+        btn12 = findViewById(R.id.btn12);
+        btn12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                moveViewbtn12();
+            }
+        });
+
+
 
     }
+
+
+
+
+
+    // 12.음성 녹음하기
+    private void moveViewbtn12(){
+        Intent in = new Intent(getApplicationContext(), Activity12.class);
+        startActivity(in);
+    }
+
+
+
+
+
 
 
     // 11.동영상 재생하기

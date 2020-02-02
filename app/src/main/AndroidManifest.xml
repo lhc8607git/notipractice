@@ -11,6 +11,8 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -63,6 +65,8 @@
         <activity android:name="mediaplayer10.Activity10"/>
 
         <activity android:name="videoplayer11.Activity11"/>
+
+        <activity android:name="audiorecorder12.Activity12"/>
 
     </application>
 
