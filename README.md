@@ -90,3 +90,9 @@
 15.동영상 재생하기 <br>
 <br>
 
+- 음성 녹음하기 <br>
+패키지 : 12<br>
+참조 : https://hijjang2.tistory.com/311<br>
+15.음성 녹음하기 <br>
+<br>
+
