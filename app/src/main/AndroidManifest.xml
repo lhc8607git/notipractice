@@ -68,6 +68,8 @@
 
         <activity android:name="audiorecorder12.Activity12"/>
 
+        <activity android:name="recyclerview13.Activity13"/>
+
     </application>
 
 </manifest>

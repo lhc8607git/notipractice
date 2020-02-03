@@ -31,6 +31,7 @@ import fragment5.MainFActivity;
 import mediaplayer10.Activity10;
 import nevigationdrawer7.Activity7;
 import ratingbar4.CommentWriteActivity;
+import recyclerview13.Activity13;
 import videoplayer11.Activity11;
 import viewpager6.Activity6;
 
@@ -38,7 +39,7 @@ import static android.app.Notification.EXTRA_NOTIFICATION_ID;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn1,btn5,btn6,btn7,btn8, btn9, btn10, btn11, btn12;
+    private Button btn1,btn5,btn6,btn7,btn8, btn9, btn10, btn11, btn12, btn13;
     private NotificationCompat.Builder builder;
 
     private RatingBar ratingBar;
@@ -144,7 +145,29 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+        // 13.리싸이클러뷰
+        btn13 = findViewById(R.id.btn13);
+        btn13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                moveViewbtn13();
+            }
+        });
+
+
+
     }
+
+
+
+    // 13.리싸이클러뷰
+    private void moveViewbtn13(){
+        Intent in = new Intent(getApplicationContext(), Activity13.class);
+        startActivity(in);
+    }
+
+
+
 
 
 
