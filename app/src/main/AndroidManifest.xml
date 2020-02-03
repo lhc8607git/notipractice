@@ -72,6 +72,8 @@
 
         <activity android:name="imgjoominjoomout14.Activity14"/>
 
+        <activity android:name="youtuplay15.Activity15"/>
+
     </application>
 
 </manifest>

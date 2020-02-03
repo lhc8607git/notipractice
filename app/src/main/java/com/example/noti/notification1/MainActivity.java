@@ -35,12 +35,13 @@ import ratingbar4.CommentWriteActivity;
 import recyclerview13.Activity13;
 import videoplayer11.Activity11;
 import viewpager6.Activity6;
+import youtuplay15.Activity15;
 
 import static android.app.Notification.EXTRA_NOTIFICATION_ID;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn1,btn5,btn6,btn7,btn8, btn9, btn10, btn11, btn12, btn13, btn14;
+    private Button btn1,btn5,btn6,btn7,btn8, btn9, btn10, btn11, btn12, btn13, btn14, btn15;
     private NotificationCompat.Builder builder;
 
     private RatingBar ratingBar;
@@ -156,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        // 13.사진 줌인, 줌아웃
+        // 14.사진 줌인, 줌아웃
         btn14 = findViewById(R.id.btn14);
         btn14.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -166,11 +167,29 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        // 15.유뷰트 동영상 재생하기
+        btn15 = findViewById(R.id.btn15);
+        btn15.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                moveViewbtn15();
+            }
+        });
+
+
 
     }
 
 
-    // 13.리싸이클러뷰
+    // 15.유뷰트 동영상 재생하기
+    private void moveViewbtn15(){
+        Intent in = new Intent(getApplicationContext(), Activity15.class);
+        startActivity(in);
+    }
+
+
+
+    // 14.사진 줌인, 줌아웃
     private void moveViewbtn14(){
         Intent in = new Intent(getApplicationContext(), Activity14.class);
         startActivity(in);
