@@ -28,6 +28,7 @@ import audiorecorder12.Activity12;
 import capture9.Activity9;
 import captureIntent8.Activity8;
 import fragment5.MainFActivity;
+import imgjoominjoomout14.Activity14;
 import mediaplayer10.Activity10;
 import nevigationdrawer7.Activity7;
 import ratingbar4.CommentWriteActivity;
@@ -39,7 +40,7 @@ import static android.app.Notification.EXTRA_NOTIFICATION_ID;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn1,btn5,btn6,btn7,btn8, btn9, btn10, btn11, btn12, btn13;
+    private Button btn1,btn5,btn6,btn7,btn8, btn9, btn10, btn11, btn12, btn13, btn14;
     private NotificationCompat.Builder builder;
 
     private RatingBar ratingBar;
@@ -155,7 +156,24 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        // 13.사진 줌인, 줌아웃
+        btn14 = findViewById(R.id.btn14);
+        btn14.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                moveViewbtn14();
+            }
+        });
 
+
+
+    }
+
+
+    // 13.리싸이클러뷰
+    private void moveViewbtn14(){
+        Intent in = new Intent(getApplicationContext(), Activity14.class);
+        startActivity(in);
     }
 
 

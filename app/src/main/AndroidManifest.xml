@@ -70,6 +70,8 @@
 
         <activity android:name="recyclerview13.Activity13"/>
 
+        <activity android:name="imgjoominjoomout14.Activity14"/>
+
     </application>
 
 </manifest>
