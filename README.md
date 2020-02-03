@@ -97,7 +97,7 @@
 <br>
 
 
-- 리싸이클러뷰 <br>
+- 리싸이클러뷰 (가로)<br>
 패키지 : recyclerview13<br>
 참조 : https://hijjang2.tistory.com/313<br>
 참조 : https://hijjang2.tistory.com/314<br>
