@@ -24,6 +24,7 @@ import android.widget.Toast;
 
 import com.example.noti.R;
 
+import anim16.Activity16;
 import audiorecorder12.Activity12;
 import capture9.Activity9;
 import captureIntent8.Activity8;
@@ -41,7 +42,7 @@ import static android.app.Notification.EXTRA_NOTIFICATION_ID;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn1,btn5,btn6,btn7,btn8, btn9, btn10, btn11, btn12, btn13, btn14, btn15;
+    private Button btn1,btn5,btn6,btn7,btn8, btn9, btn10, btn11, btn12, btn13, btn14, btn15, btn16;
     private NotificationCompat.Builder builder;
 
     private RatingBar ratingBar;
@@ -176,9 +177,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // 16.스레드 애니메이션(간단)
+        btn16 = findViewById(R.id.btn16);
+        btn16.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                moveViewbtn16();
+            }
+        });
 
 
     }
+
+    // 16.스레드 애니메이션(간단)
+    private void moveViewbtn16(){
+        Intent in = new Intent(getApplicationContext(), Activity16.class);
+        startActivity(in);
+    }
+
 
 
     // 15.유뷰트 동영상 재생하기

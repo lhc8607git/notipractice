@@ -74,6 +74,8 @@
 
         <activity android:name="youtuplay15.Activity15"/>
 
+        <activity android:name="anim16.Activity16"/>
+
     </application>
 
 </manifest>
