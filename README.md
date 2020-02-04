@@ -122,7 +122,7 @@
 
 - 스레드 애니메이션(간단)<br>
 패키지 : anim16<br>
-참조 : https://hijjang2.tistory.com/316<br>
+참조 : https://hijjang2.tistory.com/317<br>
 20.스레드 애니메이션 (그림만 바꿔서 보여줌) <br>
 <br>
 
