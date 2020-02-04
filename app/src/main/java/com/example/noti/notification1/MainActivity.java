@@ -34,6 +34,7 @@ import mediaplayer10.Activity10;
 import nevigationdrawer7.Activity7;
 import ratingbar4.CommentWriteActivity;
 import recyclerview13.Activity13;
+import twinanim17.Activity17;
 import videoplayer11.Activity11;
 import viewpager6.Activity6;
 import youtuplay15.Activity15;
@@ -42,7 +43,7 @@ import static android.app.Notification.EXTRA_NOTIFICATION_ID;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn1,btn5,btn6,btn7,btn8, btn9, btn10, btn11, btn12, btn13, btn14, btn15, btn16;
+    private Button btn1,btn5,btn6,btn7,btn8, btn9, btn10, btn11, btn12, btn13, btn14, btn15, btn16, btn17;
     private NotificationCompat.Builder builder;
 
     private RatingBar ratingBar;
@@ -186,8 +187,25 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // 17.트윈 애니메이션
+        btn17 = findViewById(R.id.btn17);
+        btn17.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                moveViewbtn17();
+            }
+        });
+
 
     }
+
+    // 17.트윈 애니메이션
+    private void moveViewbtn17(){
+        Intent in = new Intent(getApplicationContext(), Activity17.class);
+        startActivity(in);
+    }
+
+
 
     // 16.스레드 애니메이션(간단)
     private void moveViewbtn16(){

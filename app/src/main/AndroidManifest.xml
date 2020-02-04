@@ -76,6 +76,8 @@
 
         <activity android:name="anim16.Activity16"/>
 
+        <activity android:name="twinanim17.Activity17"/>
+
     </application>
 
 </manifest>
