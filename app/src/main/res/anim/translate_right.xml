@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 어떻게 동작할 지를 적어준다
+    fromXDelta = "x의 시작위치"
+    toXDelta = "x의 끝 위치"-->
+    <translate
+        android:fromXDelta="0%p"
+        android:toXDelta="100%p"
+        android:duration="500"
+        />
+</set>

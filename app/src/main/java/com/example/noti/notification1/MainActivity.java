@@ -32,6 +32,7 @@ import fragment5.MainFActivity;
 import imgjoominjoomout14.Activity14;
 import mediaplayer10.Activity10;
 import nevigationdrawer7.Activity7;
+import pagesliding18.Activity18;
 import ratingbar4.CommentWriteActivity;
 import recyclerview13.Activity13;
 import twinanim17.Activity17;
@@ -43,7 +44,7 @@ import static android.app.Notification.EXTRA_NOTIFICATION_ID;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn1,btn5,btn6,btn7,btn8, btn9, btn10, btn11, btn12, btn13, btn14, btn15, btn16, btn17;
+    private Button btn1,btn5,btn6,btn7,btn8, btn9, btn10, btn11, btn12, btn13, btn14, btn15, btn16, btn17,btn18;
     private NotificationCompat.Builder builder;
 
     private RatingBar ratingBar;
@@ -196,8 +197,28 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // 18.PageSliding(메뉴 보기?)
+        btn18 = findViewById(R.id.btn18);
+        btn18.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                moveViewbtn18();
+            }
+        });
+
 
     }
+
+    // 18.PageSliding(메뉴 보기?)
+    private void moveViewbtn18(){
+        Intent in = new Intent(getApplicationContext(), Activity18.class);
+        startActivity(in);
+    }
+
+
+
+
+
 
     // 17.트윈 애니메이션
     private void moveViewbtn17(){

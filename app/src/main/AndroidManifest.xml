@@ -78,6 +78,8 @@
 
         <activity android:name="twinanim17.Activity17"/>
 
+        <activity android:name="pagesliding18.Activity18"/>
+
     </application>
 
 </manifest>
